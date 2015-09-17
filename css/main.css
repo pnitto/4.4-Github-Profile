@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+.top-nav {
+  background: #F5F5F5; }
+
+.top-content {
+  max-width: 980px;
+  margin: 0 auto; }
+
+.top-left-section {
+  max-width: 980px; }
+
+.top-left-searchbox {
+  width: 362px;
+  height: 28px; }
+
+.after-searchbox-links {
+  display: inline-block; }
+
+.ul-searchbox-links {
+  display: inline; }
+
+.top-right-section {
+  float: right;
+  margin-top: -4%; }
+
+.top-right-ul {
+  display: inline; }
+
+.top-right-links {
+  display: inline-block;
+  padding-right: 2%; }
+
+.left-sidebar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 18.96686%;
+  border: 2px solid black;
+  background: url("../images/big-pic-me.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;
+  margin-top: 2%;
+  position: relative; }
+  .left-sidebar:last-child {
+    margin-right: 0; }
+
+.under-pic-leftside {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 18.96686%;
+  position: absolute;
+  top: 80%; }
+  .under-pic-leftside:last-child {
+    margin-right: 0; }
+
+.ul-under-pic {
+  list-style-type: none; }

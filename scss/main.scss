@@ -1,0 +1,62 @@
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+//whole page//
+
+
+//top-nav//
+.top-nav{
+  background:#F5F5F5;
+}
+
+// nav content //
+.top-content {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+//top-left-section//
+.top-left-section {
+  max-width: 980px;
+}
+.top-left-searchbox{
+  width: 362px;
+  height: 28px;
+}
+.after-searchbox-links {
+  display:inline-block;
+}
+.ul-searchbox-links {
+  display: inline;
+}
+//top-right section//
+.top-right-section{
+float: right;
+margin-top: -4%;
+}
+.top-right-ul{
+  display: inline;
+}
+.top-right-links {
+  display: inline-block;
+  padding-right: 2%;
+}
+//left side bar
+.left-sidebar {
+  @include span-columns(2.5);
+  border: 2px solid black;
+  background: url('../images/big-pic-me.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;
+  margin-top: 2%;
+  position: relative;
+}
+.under-pic-leftside{
+  @include span-columns(2.5);
+  position: absolute;
+  top: 80%;
+}
+.ul-under-pic{
+  list-style-type: none;
+}
