@@ -32,7 +32,7 @@
 //top-right section//
 .top-right-section{
 float: right;
-margin-top: -4%;
+margin-top: -3%;
 }
 .top-right-ul{
   display: inline;
@@ -40,6 +40,10 @@ margin-top: -4%;
 .top-right-links {
   display: inline-block;
   padding-right: 2%;
+}
+.small-pic-me {
+  height: 20px;
+  width: 20px;
 }
 //left side bar
 .left-sidebar {
@@ -55,8 +59,28 @@ margin-top: -4%;
 .under-pic-leftside{
   @include span-columns(2.5);
   position: absolute;
-  top: 80%;
+  top: 84%;
 }
-.ul-under-pic{
+.ul-under-pic {
   list-style-type: none;
+  margin-left: -16%;
+}
+.i-under-pic {
+  margin-right: 5%;
+}
+.ul-following {
+  display: inline;
+  margin-left: -12%;
+}
+.following-li {
+  display: inline-block;
+  text-align: center;
+
+}
+.following-numbers {
+  color: blue;
+  font-size: 22px;
+}
+.following-a {
+  text-decoration: none;
 }
