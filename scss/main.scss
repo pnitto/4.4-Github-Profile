@@ -11,14 +11,11 @@
 
 // nav content //
 .top-content {
-  max-width: 980px;
+  max-width: 1018px;
   margin: 0 auto;
 }
 
 //top-left-section//
-.top-left-section {
-  max-width: 980px;
-}
 .top-left-searchbox{
   width: 362px;
   height: 28px;
@@ -47,7 +44,6 @@ margin-top: -3%;
 }
 //left side bar
 .left-sidebar {
-  @include span-columns(2.5);
   border: 2px solid black;
   background: url('../images/big-pic-me.jpeg');
   background-repeat: no-repeat;
@@ -57,7 +53,6 @@ margin-top: -3%;
   position: relative;
 }
 .under-pic-leftside{
-  @include span-columns(2.5);
   position: absolute;
   top: 84%;
 }
@@ -83,4 +78,36 @@ margin-top: -3%;
 }
 .following-a {
   text-decoration: none;
+}
+.left-content {
+  width: 230px;
+  margin-left: 15.5%;
+  float:left;
+  margin-top: 1%;
+}
+// repo section
+.repo-section {
+  width: 735px;
+  border: 1px solid black;
+  float: left;
+  height: 1000px;
+  margin-left: 1%;
+  margin-top:1.3%;
+}
+.repo-ul {
+  display: inline;
+}
+.repo-tab-links{
+  display: inline-block;
+  margin-right: 5%;
+  height: 32px;
+  width: 118px;
+  margin-top: 2%;
+  border: 1px solid gray;
+}
+.tab-a {
+  text-decoration: none;
+}
+.octicon {
+  padding-right: 5px;
 }
