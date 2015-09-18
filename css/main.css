@@ -40,7 +40,6 @@ html {
 
 .left-sidebar {
   border: 2px solid black;
-  background: url("../images/big-pic-me.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 230px;
