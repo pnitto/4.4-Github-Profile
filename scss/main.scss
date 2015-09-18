@@ -96,18 +96,66 @@ margin-top: -3%;
 }
 .repo-ul {
   display: inline;
+  margin-left: -3%;
 }
 .repo-tab-links{
   display: inline-block;
-  margin-right: 5%;
+  margin-right: 2%;
   height: 32px;
   width: 118px;
-  margin-top: 2%;
-  border: 1px solid gray;
 }
 .tab-a {
   text-decoration: none;
 }
 .octicon {
   padding-right: 5px;
+}
+.tabs {
+  border: 1px solid gray;
+}
+.repos {
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+}
+
+//edit profile button
+.edit-profile-button {
+  width: 122px;
+  height: 26px;
+  float:right;
+}
+//repo buttons and links
+.repo-header {
+  width: 100%;
+}
+.find-repo-box {
+  height: 36px;
+  width: 262px;
+}
+.search-button {
+  width: 71px;
+  height: 36px;
+}
+.repo-a {
+  text-decoration: none;
+}
+.new-button {
+  background-color: #83D666;
+  float: right;
+  height: 36px;
+  width: 72px;
+  color: white;
+  border: none;
+  border-radius: 5%;
+}
+.repo-header-ul {
+  list-style-type: none;
+  position: absolute;
+  top: 20%;
+  left: 58%;
+}
+.repo-links {
+  float:left;
+
 }
