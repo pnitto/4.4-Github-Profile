@@ -54,6 +54,7 @@ $.ajax({
    type: "GET",
 }).then(function(data){
 var repoUrl = "https://api.github.com/users/pnitto/repos";
+
 $.ajax(repoUrl).then(function(responses){
   responses.forEach(function(repo){
     var li = $('<li>'+ repo.full_name +'</li>');
