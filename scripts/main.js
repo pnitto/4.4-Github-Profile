@@ -1,40 +1,3 @@
-/*$(document).ready(function(){
-    $.ajax({
-          headers: {"Authorization": "token f9aade4f2bc6d334fe720871214086a9a3bccc6a"},
-          url: "https://api.github.com/user/repos",
-          type: "GET",
-        }).then(function(data){
-          return data.forEach(function(repo){
-          });
-    });
-*/
-  /*  $(document).ready(function() {
-
-     $.ajax({
-      headers: {"Authorization": "token XXXXXXXXX"},
-      url: "https://api.github.com/users/techgravy",
-      type: "GET",
-    }).then(function(data){
-
-    var url = "https://api.github.com/users/techgravy";
-    $.ajax(url).then(function(response) {
-    console.log(response.avatar_url)
-     $(".profile-pic").html('<img src="' + response.avatar_url +'"/>');
-
-    })
-
-    });
-    $.ajax({
-    headers: {"Authorization": "token XXXXXXXXX"},
-    url: "https://api.github.com/user/repos",
-    type: "GET",
-}).then(function(data){
-//console.log(data);
-
-
- });
-});
-    */
 $(document).ready(function(){
   $.ajax({
     headers: {"Authorization": "token f9aade4f2bc6d334fe720871214086a9a3bccc6a"},
@@ -43,8 +6,15 @@ $(document).ready(function(){
   }).then(function(userData){
     var url = "https://api.github.com/users/pnitto";
     $.ajax(url).then(function(response){
-      console.log(response)
-    $(".left-sidebar").css('background','url(' + response.avatar_url +')');
+      //console.log(response)
+    $(".left-sidebar").css('background-image','url(' + response.avatar_url +')');
+    $(".name-under-pic").html(response.name);
+    $(".username").html(response.login);
+    $(".email").html(response.email);
+    $(".joined").html(response.created_at);
+    $(".js-followers").html(response.followers);
+    $(".js-following").html(response.following);
+    })
   })
 });
 
@@ -57,19 +27,25 @@ var repoUrl = "https://api.github.com/users/pnitto/repos";
 
 $.ajax(repoUrl).then(function(responses){
   responses.forEach(function(repo){
-    var li = $('<li>'+ repo.full_name +'</li>');
-    console.log(repo);
+    var li = $('<li>'+ repo.name + '</li>');
 $(".repo-ulll").append(li);
   })
 })
 });
-});
 
+$.ajax({
+  headers:{"Authorization": "token f9aade4f2bc6d334fe720871214086a9a3bccc6a"},
+  url: "https://api.github.com/users/pnitto/starred",
+  type: "GET",
+}).then(function(stars){
+    console.log(stars.length);
+    $(".js-starred").html(stars.length);
+  });
 
-/*var repoUrl = "https://api.github.com/users/pnitto/repos",
-$.ajax(repoUrl).then(function(repos){
-  console.log(repos)
-  repos.forEach()
-
+$.ajax({
+  headers:{"Authorization": "token f9aade4f2bc6d334fe720871214086a9a3bccc6a"},
+  url: "https://api.github.com/users/pnitto/orgs",
+  type: "GET",
+}).then(function(orgs){
+  console.log(orgs);
 })
-*/

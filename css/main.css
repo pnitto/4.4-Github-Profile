@@ -42,6 +42,7 @@ html {
   border: 2px solid black;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 230px;
   margin-top: 2%;
   position: relative; }
@@ -146,6 +147,9 @@ html {
 
 .repo-links {
   float: left; }
+
+.repo-ulll {
+  list-style-type: none; }
 
 .footer {
   margin-top: 100%; }

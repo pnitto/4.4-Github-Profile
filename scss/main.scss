@@ -1,6 +1,5 @@
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
-
 //whole page//
 
 
@@ -48,6 +47,7 @@ margin-top: -3%;
   //background: url('../images/big-pic-me.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position:center;
   height: 230px;
   margin-top: 2%;
   position: relative;
@@ -157,7 +157,9 @@ margin-top: -3%;
 }
 .repo-links {
   float:left;
-
+}
+.repo-ulll {
+  list-style-type: none;
 }
 //footer
 .footer {

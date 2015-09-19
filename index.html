@@ -38,20 +38,23 @@
 <div class="left-content">
   <div class="left-sidebar">
   </div>
-    <h1 class="name-under-pic">Paul Nitto</h1>
-      <h4 class="username">Pnitto</h4>
+        <h1 class="name-under-pic"></h1>
+          <h4 class="username"></h4>
       <hr>
       <ul class="ul-under-pic">
-        <li class="links-under-pic"><i class="fa fa-envelope-o i-under-pic"></i><a href="mailto:pnitto18@gmail.com">pnitto18@gmail.com<a/></li>
-        <li class="links-under-pic"><i class="fa fa-clock-o i-under-pic"></i>Joined on May 18, 2015</li>
+        <li class="links-under-pic"><i class="fa fa-envelope-o i-under-pic"></i><a class="email" href="mailto:pnitto18@gmail.com">pnitto18@gmail.com<a/></li>
+        <li class="links-under-pic"><i class="fa fa-clock-o i-under-pic"></i>Joined on<time class="joined"></time></li>
       </ul>
       <hr>
       <ul class="ul-following">
-        <li class="following-li"><a href="www.google.com" class="following-a"><span class="following-numbers">3</span><h4>Followers</h4></a></li>
-        <li class="following-li"><a href="www.google.com" class="following-a"><span class="following-numbers">3</span><h4>Starred</h4></a></li>
-        <li class="following-li"><a href="www.google.com" class="following-a"><span class="following-numbers">3</span><h4>Following</h4></a></li>
+        <li class="following-li"><a href="www.google.com" class="following-a"><span class="following-numbers js-followers"></span><h4>Followers</h4></a></li>
+        <li class="following-li"><a href="www.google.com" class="following-a"><span class="following-numbers js-starred"></span><h4>Starred</h4></a></li>
+        <li class="following-li"><a href="www.google.com" class="following-a"><span class="following-numbers js-following"></span><h4>Following</h4></a></li>
       </ul>
       <hr>
+      <h4>Organizations</h4>
+      <div class="organizations">
+      </div>
   </div>
 </div>
 <div class="repo-section">
@@ -78,19 +81,19 @@
   </div>
   <div class="repo-div">
     <ul class="repo-ulll">
-      <li class="a-repo"><a href=""></a></li>
+    <li class="a-repo"><a class="repo-link" href=""></a></li>
     </ul>
   </div>
 </div>
 <footer class="footer">
   <div class="left-footer">
-    <ul>
-      <li><span>2015 Github, Inc.</span></li>
-      <li><a href="https://github.com/pnitto">Terms</a></li>
-      <li><a href="https://github.com/pnitto">Privacy</a></li>
-      <li><a href="https://github.com/pnitto">Security</a></li>
-      <li><a href="https://github.com/pnitto">Contact</a></li>
-      <li><a href="https://github.com/pnitto">Help</a></li>
+    <ul class="ul-footer-left">
+      <li class="li-footer-left"><span>2015 Github, Inc.</span></li>
+      <li class="li-footer-left"><a href="https://github.com/pnitto">Terms</a></li>
+      <li class="li-footer-left"><a href="https://github.com/pnitto">Privacy</a></li>
+      <li class="li-footer-left"><a href="https://github.com/pnitto">Security</a></li>
+      <li class="li-footer-left"><a href="https://github.com/pnitto">Contact</a></li>
+      <li class="li-footer-left"><a href="https://github.com/pnitto">Help</a></li>
   </ul>
   <a href="https://github.com/"><i class="fa fa-github fa-2x"></i></a>
   <ul>
@@ -106,10 +109,8 @@
 </footer>
 
 
-
-
-<script src="bower_components/handlebars/handlebars.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/handlebars/handlebars.js"></script>
 <script src="scripts/main.js"></script>
 </body>
 </html>
