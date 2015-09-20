@@ -94,6 +94,11 @@ html {
   font-weight: 300;
   margin-top: -7%; }
 
+.email {
+  font-size: 14px;
+  color: #4078c0;
+  font-family: 'helvetica'; }
+
 .under-pic-leftside {
   position: absolute;
   top: 84%; }
@@ -103,7 +108,8 @@ html {
   margin-left: -16%; }
 
 .i-under-pic {
-  margin-right: 5%; }
+  margin-right: 5%;
+  color: #999999; }
 
 .ul-following {
   display: inline;
@@ -111,11 +117,21 @@ html {
 
 .following-li {
   display: inline-block;
-  text-align: center; }
+  text-align: center;
+  margin-right: 10%; }
 
 .following-numbers {
-  color: blue;
-  font-size: 22px; }
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+  color: #4078c0;
+  font-family: 'helvetica'; }
+
+.text {
+  font-size: 11px;
+  font-family: 'helvetica';
+  color: #767676;
+  text-align: center; }
 
 .following-a {
   text-decoration: none; }
@@ -125,6 +141,12 @@ html {
   margin-left: 15.5%;
   float: left;
   margin-top: 1%; }
+
+.org-heading {
+  font-family: 'helvetica';
+  font-size: 16px;
+  line-height: 1.1;
+  color: #333333; }
 
 .repo-section {
   width: 737px;
@@ -252,26 +274,54 @@ html {
 
 .footer {
   position: absolute;
-  top: 800%;
-  width: 100%; }
+  top: 756%;
+  width: 982px;
+  left: 16%; }
+
+.footer-a {
+  font-size: 12px;
+  color: #4078c0;
+  text-decoration: none;
+  font-family: 'helvetica'; }
+
+.github-span {
+  font-size: 12px;
+  color: #767676;
+  font-family: 'helvetica'; }
 
 .ul-footer-left {
   float: left;
   display: inline; }
 
 .li-footer-left {
-  display: inline-block; }
+  display: inline-block;
+  margin-left: 10px; }
 
 .ul-footer-right {
   float: right;
   display: inline; }
 
 .li-right-footer {
-  display: inline-block; }
+  display: inline-block;
+  margin-left: 10px; }
 
 .f-git {
   position: absolute;
-  left: 50%; }
+  left: 50%;
+  margin-top: 0.5%;
+  color: #ccc; }
 
 .joined {
-  padding-left: 3%; }
+  padding-left: 3%;
+  font-family: 'helvetica';
+  font-size: 14px; }
+
+.joined-on {
+  font-family: 'helvetica';
+  font-size: 14px; }
+
+.footer-line {
+  width: 982px; }
+
+.left-footer {
+  margin-left: -5.2%; }
