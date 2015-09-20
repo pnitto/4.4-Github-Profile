@@ -291,7 +291,8 @@ html {
 
 .ul-footer-left {
   float: left;
-  display: inline; }
+  display: inline;
+  margin-top: -1%; }
 
 .li-footer-left {
   display: inline-block;
@@ -299,7 +300,8 @@ html {
 
 .ul-footer-right {
   float: right;
-  display: inline; }
+  display: inline;
+  margin-top: -1%; }
 
 .li-right-footer {
   display: inline-block;
@@ -308,7 +310,7 @@ html {
 .f-git {
   position: absolute;
   left: 50%;
-  margin-top: 0.5%;
+  margin-top: -1.5%;
   color: #ccc; }
 
 .joined {
