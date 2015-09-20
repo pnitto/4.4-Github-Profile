@@ -11,7 +11,7 @@ $(document).ready(function() {
   }).then(function(userData) {
     var url = "https://api.github.com/users/pnitto";
     $.ajax(url).then(function(response) {
-      console.log(response)
+      //console.log(response)
       $(".left-sidebar").css('background-image', 'url(' + response.avatar_url + ')');
       $(".name-under-pic").html(response.name);
       $(".username").html(response.login);
@@ -23,7 +23,7 @@ $(document).ready(function() {
 
     })
   })
-});
+})
 
 $.ajax({
    headers: {"Authorization": "token f9aade4f2bc6d334fe720871214086a9a3bccc6a"},
@@ -35,7 +35,7 @@ var repoUrl = "https://api.github.com/users/pnitto/repos";
 $.ajax(repoUrl).then(function(responses){
   responses.forEach(function(repo){
     console.log(repo)
-    var li = $('<li class="repo-li">' + '<a href="" class="repo-a-link">'+ repo.name  + '</a>' + '</li>');
+    var li = $('<li class="repo-li">' + '<a href="" class="repo-a-link">'+ repo.name  + '</a>' + '</li>' + '<div class="line"></div>');
     $(".repo-a-link").attr('href', repo.html_url);
 $(".repo-ulll").append(li);
   })
@@ -57,7 +57,7 @@ $.ajax({
   headers: {
     "Authorization": "token f9aade4f2bc6d334fe720871214086a9a3bccc6a"
   },
-  url: "https://api.github.com/organizations",
+  url: "https://api.github.com/users/pnitto/orgs",
   type: "GET",
 }).then(function(orgs) {
   console.log(orgs);
