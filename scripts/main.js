@@ -1,3 +1,6 @@
+
+
+
 $(document).ready(function() {
   $.ajax({
     headers: {
@@ -13,7 +16,7 @@ $(document).ready(function() {
       $(".name-under-pic").html(response.name);
       $(".username").html(response.login);
       $(".email").html(response.email);
-      $(".joined").html(response.created_at);
+      $(".joined").html(moment(response.created_at).format("MMM DD, YYYY"));
       $(".js-followers").html(response.followers);
       $(".js-following").html(response.following);
       //$(".org-pic").css('src', 'url(' + response.));
