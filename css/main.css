@@ -85,7 +85,8 @@ html {
   float: left;
   height: 1000px;
   margin-left: 1%;
-  margin-top: 1.3%; }
+  margin-top: 1.3%;
+  position: relative; }
 
 .repo-ul {
   display: inline;
@@ -142,8 +143,8 @@ html {
 .repo-header-ul {
   list-style-type: none;
   position: absolute;
-  top: 20%;
-  left: 58%; }
+  top: 3%;
+  left: 47%; }
 
 .repo-links {
   float: left; }
@@ -151,5 +152,35 @@ html {
 .repo-ulll {
   list-style-type: none; }
 
+.repo-a-link {
+  color: #4078c0;
+  text-decoration: none;
+  font-family: 'Helvetica';
+  font-weight: bold;
+  font-size: 20px; }
+
+.repo-li {
+  margin-bottom: 12%; }
+
 .footer {
-  margin-top: 100%; }
+  position: absolute;
+  top: 800%;
+  width: 100%; }
+
+.ul-footer-left {
+  float: left;
+  display: inline; }
+
+.li-footer-left {
+  display: inline-block; }
+
+.ul-footer-right {
+  float: right;
+  display: inline; }
+
+.li-right-footer {
+  display: inline-block; }
+
+.f-git {
+  position: absolute;
+  left: 50%; }
