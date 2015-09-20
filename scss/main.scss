@@ -17,6 +17,7 @@
   max-width: 1018px;
   margin: 0 auto;
   height: 38px;
+  margin-left:12%;
 }
 
 //top-left-section//
@@ -52,8 +53,15 @@
   font-weight: bold;
   font-family: "helvetica";
 }
+.searchbox-a:hover{
+  color: #4078c0;
+}
 .fa-2x {
+    color: #333333;
     margin-top:27%;
+}
+.fa-2x:hover {
+  color: #4078c0;
 }
 //top-right section//
 .top-right-section{
@@ -70,7 +78,9 @@ margin-right: -2.5%;
 }
 .top-right-a{
   color: #333333;
-
+}
+.top-right-a:hover{
+  color:#4078c0;
 }
 .small-pic-me {
   height: 20px;
@@ -231,6 +241,9 @@ margin-right: -2.5%;
   font-weight: bold;
   font-size: 13px;
 }
+.search-button:hover {
+  background-color:#eee;
+}
 .fa-pencil {
   padding-right: 5%;
 }
@@ -239,6 +252,9 @@ margin-right: -2.5%;
   font-family: 'helvetica';
   font-size: 14px;
   color:#4078c0;
+}
+.repo-a:hover{
+  text-decoration: underline;
 }
 .new-button {
   float: right;
@@ -279,6 +295,13 @@ margin-right: -2.5%;
   font-family: 'Helvetica';
   font-weight: bold;
   font-size: 20px;
+}
+.repo-a-link:hover {
+  text-decoration: underline;
+}
+.all {
+  color:black;
+  font-weight: bold;
 }
 .repo-li {
   margin-bottom: 7%;
