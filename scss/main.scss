@@ -114,6 +114,10 @@ margin-right: -2.5%;
   font-size: 14px;
   color: #4078c0;
   font-family: 'helvetica';
+  text-decoration: none;
+}
+.email:hover{
+  text-decoration:underline;
 }
 .under-pic-leftside{
   position: absolute;
@@ -318,6 +322,9 @@ margin-right: -2.5%;
   color: #4078c0;
   text-decoration: none;
   font-family: 'helvetica';
+}
+.footer-a:hover{
+  text-decoration:underline;
 }
 .github-span {
   font-size: 12px;
